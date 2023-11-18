@@ -1,7 +1,30 @@
-.slideshow{}
+body{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.slideshow{
+    /*position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    width: 600px;
+    height: 400px;
+    background-color: blue;
+}
+
 .slideshow_slides{}
+
 .slideshow_slide{}
+
 .slideshow_image{}
+
 .slideshow_controls{}
+
 .slideshow_dots{}
+
 .slideshow_counter{}
