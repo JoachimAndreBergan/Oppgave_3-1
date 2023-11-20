@@ -1,0 +1,9 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.slideshow_image{
+    width: 100%;
+}
