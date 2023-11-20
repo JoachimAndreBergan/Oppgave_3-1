@@ -7,3 +7,11 @@
 .slideshow_image{
     width: 100%;
 }
+
+button{
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
