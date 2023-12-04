@@ -24,6 +24,15 @@ let index = 0;
     const lastIndex = slides.length - 1;
 
 const goToPreviousSlide =() =>{
+    if( index === 0){
+        index = lastIndex
+    }
+    else{
+        index = index -1;
+    }
+
+
+
     slides.forEach(slide =>{
         slide.classList.remove("slideshow_slide_visible");
     });

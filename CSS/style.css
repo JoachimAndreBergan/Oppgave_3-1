@@ -11,6 +11,23 @@ body{
     height: 100vh;
 }
 
+h1{
+    font-size: 60px;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.background_image{
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
 
 
 .slideshow{
@@ -21,13 +38,13 @@ body{
     transform: translate(-50%, -50%);*/
     width: 600px;
     height: 400px;
-    background-color: rgb(4, 0, 255);
+    /*background-color: rgb(4, 0, 255);*/
 }
 
 .slideshow_slides{
     width: 100%;
     height: 100%;
-    background-color: rgb(255, 0, 0);
+    background-color: rgba(213, 212, 212, 0.596);
 }
 
 .slideshow_slide{
@@ -69,12 +86,15 @@ body{
 }
 
 .slideshow_control_button{
+    background-color: rgba(127, 127, 127, 0.64);
+    border-radius: 100%;
+    border: 1px solid black;
     padding: 0.5rem;
-    background-color: aqua;
+    transform: translateY(-50%);
 }
 
 .slideshow_control_button:hover{
-    background: red;
+    background: rgba(2, 217, 255, 0.499)
 }
 
 .slideshow_dots{
@@ -82,7 +102,7 @@ body{
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background: gold;
+    background: rgba(255, 217, 0, 0);
     display: flex;
     flex-flow: row nowrap;
     padding: 0.5rem;
@@ -91,7 +111,7 @@ body{
 
 .slideshow_dot{
     display: block;
-    background: teal;
+    background: rgb(112, 194, 194);
     border-radius: 100%;
     width: 1rem;
     height: 1rem;
