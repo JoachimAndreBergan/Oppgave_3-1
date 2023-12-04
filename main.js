@@ -74,3 +74,5 @@ const changeSlide = (event) => {
 controls.forEach (button => {
     button.addEventListener("click", changeSlide );
 })
+
+
