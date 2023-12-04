@@ -12,67 +12,59 @@
 
 
 <body>
-
-   
-
-    <div class="background_image">
-    <img src="./assets/beach_background.jpeg" alt="beach_background">
-    </div> 
-    
-    <h1>Vacation Spots</h1>
-
-    <div class="slideshow">
-        <div class="slideshow_slides">
-
-            <figure class="slideshow_slide slideshow_slide_visible" >
-                <img class="slideshow_image"  src="./assets/image_0.jpeg" alt="Ocean with a boat and a cabana">
-                <figcaption class="slideshow_caption">Ocean Cabana</figcaption>
-            </figure>
-
-            <figure class="slideshow_slide">
-                <img class="slideshow_image"  src="./assets/image_1.jpeg" alt="Island Cabanas">
-                <figcaption class="slideshow_caption">Island Cabanas</figcaption>
-            </figure>
-
-            <figure class="slideshow_slide">
-                <img class="slideshow_image"  src="./assets/image_2.jpeg" alt="Palm Lagune">
-                <figcaption class="slideshow_caption">Palm Lagune</figcaption>
-            </figure>
-
-            <figure class="slideshow_slide">
-                <img class="slideshow_image"  src="./assets/image_3.jpeg" alt="Ocean rock formations">
-                <figcaption class="slideshow_caption">Ocean rock formations</figcaption>
-            </figure>
-
-            <figure class="slideshow_slide">
-                <img class="slideshow_image"  src="./assets/image_4.jpeg" alt="Ocean Cabana island view">
-                <figcaption class="slideshow_caption">Ocean Cabana island view</figcaption>
-            </figure>
-
-            <figure class="slideshow_slide">
-                <img class="slideshow_image"  src="./assets/image_5.jpeg" alt="Oceanside village in the hills">
-                <figcaption class="slideshow_caption">Oceanside village in the hills</figcaption>
-            </figure>
-
-            <figure class="slideshow_slide">
-                <img class="slideshow_image"  src="./assets/image_6.jpeg" alt="Tropical Island">
-                <figcaption class="slideshow_caption">Tropical Island</figcaption>
-            </figure>
-
-            <figure class="slideshow_slide">
-                <img class="slideshow_image"  src="./assets/image_7.jpeg" alt="Island cabanas ocean view">
-                <figcaption class="slideshow_caption">Island cabanas ocean view</figcaption>
-            </figure>
-
+    <div class="slideshow_container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 8</div>
+            <img src="./assets/image_0.jpeg" style="width: 100%" alt="a beach";>
+            <div class="image_text"> A Beach</div>
         </div>
 
-        <div class="slideshow_controls">
-            <button class="slideshow_control_button" data-direction="previous"> <- </button>
-
-            <button class="slideshow_control_button" data-direction="next"> -> </button>
-
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 8</div>
+            <img src="./assets/image_1.jpeg" style="width: 100%" alt="a beach";>
+            <div class="image_text"> A Beach</div>
         </div>
 
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 8</div>
+            <img src="./assets/image_2.jpeg" style="width: 100%" alt="a beach";>
+            <div class="image_text"> A Beach</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 8</div>
+            <img src="./assets/image_3.jpeg" style="width: 100%" alt="a beach";>
+            <div class="image_text"> A Beach</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 8</div>
+            <img src="./assets/image_4.jpeg" style="width: 100%" alt="a beach";>
+            <div class="image_text"> A Beach</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 8</div>
+            <img src="./assets/image_5.jpeg" style="width: 100%" alt="a beach";>
+            <div class="image_text"> A Beach</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 8</div>
+            <img src="./assets/image_6.jpeg" style="width: 100%" alt="a beach";>
+            <div class="image_text"> A Beach</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 8</div>
+            <img src="./assets/image_7.jpeg" style="width: 100%" alt="a beach";>
+            <div class="image_text"> A Beach</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+ </div>
+ <br>
         <div  style="text-align: center;"  class="slideshow_dots">
             <span class="dot" onclick="current_slide(0)"></span>
             <span class="dot" onclick="current_slide(1)"></span>
@@ -85,12 +77,6 @@
             <span class="dot" onclick="current_slide(8)"></span>
         </div>
 
-        <div class="slideshow_counter">
-            1/8
-        </div>
-
-
-    </div>
 
 
 

@@ -1,78 +1,32 @@
-const slideshow = document.querySelector(".slideshow");
-
-const slides = slideshow.querySelectorAll (".slideshow_slide");
-
-const controls = slideshow.querySelectorAll(".slideshow_control_button");
 
 
-const showMeASlide = () =>{
-    let index = 0;
-    const totalSlides = slides.length;
-    const lastIndex = slides.length - 1;
+let slideIndex = 1;
+showSlides(slideIndex)
 
-
-slides.forEach(slide =>{
-    slide.classList.remove("slideshow_slide_visible");
-});
-
-slides[0].classList.add("slideshow_slide_visible");
-
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-let index = 0;
-    const totalSlides = slides.length;
-    const lastIndex = slides.length - 1;
-
-const goToPreviousSlide =() =>{
-    if( index === 0){
-        index = lastIndex
-    }
-    else{
-        index = index -1;
-    }
-
-
-
-    slides.forEach(slide =>{
-        slide.classList.remove("slideshow_slide_visible");
-    });
-    
-    slides[index].classList.add("slideshow_slide_visible");
-};
-
-const goToNextSlide =() =>{
-    if (index < lastIndex){
-        index = index + 1;
-    }
-    else{
-        index = 0;
-    }
-    
-    slides.forEach(slide =>{
-        slide.classList.remove("slideshow_slide_visible");
-    });
-    
-    slides[index].classList.add("slideshow_slide_visible")
-};
-
-
-const changeSlide = (event) => {
-    const button = event.currentTarget;
-
-    showMeASlide();
-
-    if (button.dataset.direction === 'previous') {
-        goToPreviousSlide();
-    }
-
-    if (button.dataset.direction === 'next' ){
-        goToNextSlide();
-    }
-
+function currentSlide(n) {
+    showSlides(slideIndex = n);
 }
 
-controls.forEach (button => {
-    button.addEventListener("click", changeSlide );
-})
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName ("mySlides");
+    let dots = document.getElementsByClassName ("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++){
+        slides[i].style.display = "none";
+    }
 
+    for (i = 0; i < dots.length; i++ ) {
+        dots[i].className = dots[i].className.replace(" active" , " ");
+    }
 
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += "active";
+
+    
+}
