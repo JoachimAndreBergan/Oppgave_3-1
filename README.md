@@ -1,0 +1,2 @@
+Assignment 3 contains a slideshow with island resort photos.
+The slideshow har working previous and next buttons, bullet points(dots) that act as shortcut links to images, and a small animation for when you change slide. Photos are pulled from Google Images, searchword: Tropical,vacation beach.
